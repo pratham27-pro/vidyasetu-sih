@@ -1,5 +1,5 @@
 """
-Decode-SIH — FastAPI application entry point.
+SIH — FastAPI application entry point.
 
 Startup sequence:
   1. Import all SQLModel table models (populates metadata).
@@ -47,7 +47,7 @@ app = FastAPI(
     title=settings.APP_NAME,
     version=settings.APP_VERSION,
     description=(
-        "Backend API for the Decode-SIH inclusive education platform. "
+        "Backend API for the SIH inclusive education platform. "
         "Supports School, Student, Parent, and Admin dashboards."
     ),
     docs_url="/docs",

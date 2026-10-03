@@ -35,7 +35,7 @@ class Settings(BaseSettings):
     ADMIN_PASSWORD: str = "123456789"
 
     # App
-    APP_NAME: str = "Decode-SIH API"
+    APP_NAME: str = "SIH API"
     APP_VERSION: str = "0.1.0"
     DEBUG: bool = False
 

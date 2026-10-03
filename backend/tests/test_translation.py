@@ -9,7 +9,7 @@ def test_translate_batch_english_identity():
     response = client.post(
         "/api/v1/translate/batch",
         json={
-            "texts": ["Hello world", "Welcome to Decode-SIH"],
+            "texts": ["Hello world", "Welcome to SIH"],
             "target_lang": "en",
         },
     )
@@ -17,7 +17,7 @@ def test_translate_batch_english_identity():
     data = response.json()
     assert data["target_lang"] == "en"
     assert data["translations"]["Hello world"] == "Hello world"
-    assert data["translations"]["Welcome to Decode-SIH"] == "Welcome to Decode-SIH"
+    assert data["translations"]["Welcome to SIH"] == "Welcome to SIH"
 
 
 def test_translate_batch_empty_texts():

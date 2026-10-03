@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: decode-sih-backend
+    name: vidyasetu-sih-backend
     env: python
     region: singapore   # closest to India
     plan: free

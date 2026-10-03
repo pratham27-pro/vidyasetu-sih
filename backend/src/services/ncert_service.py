@@ -146,7 +146,7 @@ async def upload_ncert_pdf(
             detail="NCERT book not found.",
         )
 
-    upload = await upload_pdf(file, folder=f"decode-sih/ncert/class-{book.class_number}")
+    upload = await upload_pdf(file, folder=f"sih/ncert/class-{book.class_number}")
     book.file_url = upload["url"]
     session.add(book)
 
@@ -180,7 +180,7 @@ async def create_ncert_book(
 ) -> tuple[NCERTBook, Optional[str]]:
     file_url = None
     if file:
-        upload = await upload_pdf(file, folder=f"decode-sih/ncert/class-{data.class_number}")
+        upload = await upload_pdf(file, folder=f"sih/ncert/class-{data.class_number}")
         file_url = upload["url"]
 
     book = NCERTBook(

@@ -7,7 +7,7 @@
 [![LangChain](https://img.shields.io/badge/LangChain-Enabled-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)](https://www.langchain.com/)
 [![LangGraph](https://img.shields.io/badge/LangGraph-Agentic-FF6F61?style=for-the-badge)](https://langchain-ai.github.io/langgraph/)
 
-> **DECODE-SIH Problem Statement 4 (PS4):** Inclusive Education AI to make learning accessible through regional languages, adaptive diagnostics, and assistive technologies.
+> **SIH Problem Statement — Student Innovation: Smart Education.** A concept that describes learning in the digital age, enabling learners to learn more effectively, efficiently, flexibly and comfortably.
 > 
 > *"The goal is not simply to digitize learning — it is to make learning adapt to the learner."*
 
@@ -183,8 +183,8 @@ sequenceDiagram
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/VaibhavChaturvedi03/decode-sih.git
-cd decode-sih
+git clone https://github.com/pratham27-pro/vidyasetu-sih.git
+cd vidyasetu-sih
 ```
 
 ---
@@ -243,10 +243,10 @@ npm run dev
 ## 📁 Repository Directory Structure
 
 ```directory
-decode-sih/
+vidyasetu-sih/
 ├── ARCHITECTURE.md                 # Detailed architectural specifications
 ├── DETAILS.md                      # Product vision & feature details
-├── inclusive-education-ai-notes.md  # DECODE-SIH strategy & competitive breakdown
+├── inclusive-education-ai-notes.md  # SIH strategy & competitive breakdown
 ├── backend/                        # FastAPI Backend Application
 │   ├── pyproject.toml              # uv project dependencies
 │   ├── uv.lock                     # Lockfile for reproducible builds

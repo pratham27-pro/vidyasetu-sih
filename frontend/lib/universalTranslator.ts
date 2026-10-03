@@ -1,5 +1,5 @@
 /**
- * Universal Phrase Translation Engine for Decode-SIH / VidyaSetu Dashboards.
+ * Universal Phrase Translation Engine for SIH / VidyaSetu Dashboards.
  * 
  * Provides:
  * 1. Instant 0ms offline phrase translations across 8 regional languages for common dashboard UI text.

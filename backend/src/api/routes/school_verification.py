@@ -270,7 +270,7 @@ async def upload_evidence(
             detail="This request has already been decided.",
         )
 
-    upload = await upload_pdf(file, folder="decode-sih/school-authority")
+    upload = await upload_pdf(file, folder="sih/school-authority")
     claim.evidence_url = upload["url"]
     # Evidence moves the claim into human review — it never approves it.
     claim.authority_status = AuthorityStatus.MANUAL_REVIEW

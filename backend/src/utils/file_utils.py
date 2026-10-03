@@ -57,7 +57,7 @@ def save_local_pdf(data: bytes, subfolder: str = "modules") -> str:
     return f"/uploads/{subfolder}/{filename}"
 
 
-async def upload_pdf(file: UploadFile, folder: str = "decode-sih/modules") -> dict:
+async def upload_pdf(file: UploadFile, folder: str = "sih/modules") -> dict:
     """
     Validate and save a PDF file locally for reliable browser PDF viewing.
 
@@ -79,7 +79,7 @@ async def upload_pdf(file: UploadFile, folder: str = "decode-sih/modules") -> di
 
 async def upload_images_as_pdf(
     files: Sequence[UploadFile],
-    folder: str = "decode-sih/modules",
+    folder: str = "sih/modules",
 ) -> dict:
     """
     Accept one or more image files, merge them into a single PDF,

@@ -100,7 +100,7 @@ async def add_pdf_module(
 ) -> Module:
     file_bytes = await file.read()
     await file.seek(0)
-    upload = await upload_pdf(file, folder=f"decode-sih/{branch_name}/class-{class_number}")
+    upload = await upload_pdf(file, folder=f"sih/{branch_name}/class-{class_number}")
     module = Module(
         branch_name=branch_name,
         class_number=class_number,
@@ -153,7 +153,7 @@ async def add_images_module(
     subject: Optional[str] = None,
 ) -> Module:
     upload = await upload_images_as_pdf(
-        files, folder=f"decode-sih/{branch_name}/class-{class_number}"
+        files, folder=f"sih/{branch_name}/class-{class_number}"
     )
     module = Module(
         branch_name=branch_name,
@@ -287,7 +287,7 @@ async def replace_module_pdf(
         delete_cloudinary_asset(module.cloudinary_public_id)
 
     upload = await upload_pdf(
-        file, folder=f"decode-sih/{branch_name}/class-{module.class_number}"
+        file, folder=f"sih/{branch_name}/class-{module.class_number}"
     )
     module.file_url = upload["url"]
     module.cloudinary_public_id = upload["public_id"]
@@ -318,7 +318,7 @@ async def replace_module_images(
         delete_cloudinary_asset(module.ocr_pdf_public_id)
 
     upload = await upload_images_as_pdf(
-        files, folder=f"decode-sih/{branch_name}/class-{module.class_number}"
+        files, folder=f"sih/{branch_name}/class-{module.class_number}"
     )
     effective_title = new_title or module.title
     module.file_url = upload["url"]
